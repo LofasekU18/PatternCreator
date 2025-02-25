@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vzor - plná moc</title>
     <link rel="stylesheet" href="/style/style.css">
+    <script src="scripts/main.js"></script>
 </head>
 <header>
     <h1>Web App with PDF Generator</h1>
+
     <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
@@ -19,6 +21,7 @@
 </header>
 
 <body>
+    <h2 id="neco">Text</h2>
     <h1>Plná moc</h1>
     <form>
         <h2>Zmocnitel</h2>
@@ -49,9 +52,10 @@
         <input type="date" id="acceptanceDate" name="acceptanceDate">
         <label for="vin">Místo:</label>
         <input type="text" id="place" name="place">
-
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="doSomething()">Vytvořit</button>
     </form>
+    <button onclick="doSomething()">Test</button>
+
 </body>
 
 </html>
