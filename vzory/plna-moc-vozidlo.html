@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vzor - plná moc</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<header>
+    <h1>Web App with PDF Generator</h1>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="text.html">Generate PDF</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1>Plná moc</h1>
+    <form>
+        <h2>Zmocnitel</h2>
+        <label for="signedBy">Já, níže podepsaný(á):</label>
+        <input type="text" id="signedBy" name="signedBy">
+        <label for="identifier">Rodné číslo / IČ:</label>
+        <input type="text" id="identifier" name="identifier">
+        <label for="address">Trvale bytem (nebo sídlo):</label>
+        <input type="text" id="address" name="address">
+        <h2>Zmocněnec</h2>
+        <label for="authorizedBy">Jméno a příjmení / název společnosti:</label>
+        <input type="text" id="authorizedBy" name="authorizedBy">
+        <label for="authIdentifier">Rodné číslo / IČ:</label>
+        <input type="text" id="authIdentifier" name="authIdentifier">
+        <label for="authAddress">Trvale bytem (nebo sídlo):</label>
+        <input type="text" id="authAddress" name="authAddress">
+        <h2>Popis</h2>
+        <label for="action">Pro (určení konkrétního právního úkonu/ nebo úkonů):</label>
+        <textarea id="action"
+            name="action">provedení přepisu vozidla v registru silničních vozidel na místně příslušném obecním úřadě.</textarea>
+        <label for="vehicleBrand">Vozidlo (značka, typ):</label>
+        <input type="text" id="vehicleBrand" name="vehicleBrand">
+        <label for="licensePlate">Registrační značka (RZ):</label>
+        <input type="text" id="licensePlate" name="licensePlate">
+        <label for="vin">VIN (číslo karoserie):</label>
+        <input type="text" id="vin" name="vin">
+        <label for="acceptanceDate">Datum:</label>
+        <input type="date" id="acceptanceDate" name="acceptanceDate">
+        <label for="vin">Místo:</label>
+        <input type="text" id="place" name="place">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
