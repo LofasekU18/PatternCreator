@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vzor - plná moc</title>
     <link rel="stylesheet" href="/style/style.css">
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 <header>
     <h1>Web App with PDF Generator</h1>
 
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="text.html">Generate PDF</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+    <nav class="menu">
+        <a href="../index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
     </nav>
 </header>
 
-<body>
+<body id="kupni">
     <h2 id="neco">Text</h2>
-    <h1>Plná moc</h1>
-    <form>
+    <input type="text" id="something">
+    <button onclick="doSomething();changeIt();">Test</button>
+    <button onclick="createPDF2();">Create</button>
+    <form id="TEST">
+        <h1>Plná moc</h1>
         <h2>Zmocnitel</h2>
         <label for="signedBy">Já, níže podepsaný(á):</label>
         <input type="text" id="signedBy" name="signedBy">
@@ -52,10 +57,8 @@
         <input type="date" id="acceptanceDate" name="acceptanceDate">
         <label for="vin">Místo:</label>
         <input type="text" id="place" name="place">
-        <button type="submit" onclick="doSomething()">Vytvořit</button>
     </form>
-    <button onclick="doSomething()">Test</button>
-
+    <button type="submit" onclick="createPDF()">Vytvořit</button>
 </body>
 
 </html>

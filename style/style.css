@@ -1,14 +1,82 @@
 body {
+    justify-content: center;
+
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
 }
 
-h1,
-h2 {
-    color: #333;
+.menu {
+
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px 0px;
+    border: 2px solid red;
+
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+/* Underline effect */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+h1 {
     text-align: center;
 }
+
+h2 {
+    color: #333;
+    text-align: lef;
+}
+
+.grid-container {
+    padding-top: 20px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+}
+
+.grid-container a img {
+    width: 100%;
+    height: auto;
+    border-radius: px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid-container a img:hover {
+    transform: scale(1.05);
+    transform: scale(1.2) rotate(10deg);
+}
+
 
 form {
     display: flex;
@@ -63,7 +131,15 @@ button:hover {
     background-color: #45a049;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .menu {
+        display: grid;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
     form {
         padding: 15px;
     }

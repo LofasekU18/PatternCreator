@@ -7,22 +7,41 @@
     <title>Vzory - Plná moc k přepisu/Kupní smlouva automobil</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <header>
     <h1>Web App with PDF Generator</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kupni-smlouva-vozidlo.html">Kupní smlouva</a></li>
-            <li><a href="plna-moc-vozidlo.html">Plná moc</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
     </nav>
 </header>
 
 <body>
-    <h1 id="h1"></h1>
-    <button onclick="somethingDo()">test</button>
+    <div id="text">
+        This is the content of the div with id "text".
+    </div>
+    <div class="grid-container">
+        <a href="/vzory/kupni-smlouva-vozidlo.html"><img src="images/vzor-kupni-smouva-na-auto.jpg"></a>
+        <a href="/vzory/plna-moc-vozidlo.html"><img src="images/vzor-plna-moc-na-prepis.jpg"></a>
+        <a href="/vzory/plna-moc-vozidlo.html"><img src="images/vzor-plna-moc-na-prepis.jpg"></a>
+        <a href="/vzory/plna-moc-vozidlo.html"><img src="images/vzor-plna-moc-na-prepis.jpg"></a>
+        <a href="/vzory/plna-moc-vozidlo.html"><img src="images/vzor-plna-moc-na-prepis.jpg"></a>
+    </div>
+
+    <button onclick="createPDF()">test</button>
+    <script>
+
+    </script>
 </body>
+<footer>
+    <p>&copy;
+        <script>document.write(new Date().getFullYear());</script> YourCompany. All rights reserved.
+    </p>
+</footer>
 
 </html>
