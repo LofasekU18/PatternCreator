@@ -43,7 +43,10 @@ function createPDF2() {
         doc.text('Plná moc', 105, 20, { align: 'center' });
 
         doc.setFontSize(12);
-        doc.setFont('helvetica', 'normal');
+
+        doc.addFont('../fonts/DejaVuSans.ttf', 'DejaVuSans', 'bold');
+        doc.setFont('DejaVuSans');
+        console.log(doc.getFontList())
 
         doc.text('Já, níže podepsaný(á):', 20, 40);
         doc.text('.............................................................', 20, 50);
