@@ -49,7 +49,7 @@ function createPDF2() {
         console.log(doc.getFontList())
 
         doc.text('Já, níže podepsaný(á):', 20, 40);
-        doc.text('.............................................................', 20, 50);
+        doc.text(document.getElementById("signedBy").value, 20, 50);
         doc.text('Rodné číslo / IČ:', 20, 60);
         doc.text('.............................................................', 20, 70);
         doc.text('Trvale bytem (nebo sídlo):', 20, 80);

@@ -10,55 +10,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </head>
-<header>
-    <h1>Web App with PDF Generator</h1>
 
-    <nav class="menu">
-        <a href="../index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
 
 <body id="kupni">
-    <h2 id="neco">Text</h2>
-    <input type="text" id="something">
-    <button onclick="doSomething();changeIt();">Test</button>
-    <button onclick="createPDF2();">Create</button>
-    <form id="TEST">
-        <h1>Plná moc</h1>
-        <h2>Zmocnitel</h2>
-        <label for="signedBy">Já, níže podepsaný(á):</label>
-        <input type="text" id="signedBy" name="signedBy">
-        <label for="identifier">Rodné číslo / IČ:</label>
-        <input type="text" id="identifier" name="identifier">
-        <label for="address">Trvale bytem (nebo sídlo):</label>
-        <input type="text" id="address" name="address">
-        <h2>Zmocněnec</h2>
-        <label for="authorizedBy">Jméno a příjmení / název společnosti:</label>
-        <input type="text" id="authorizedBy" name="authorizedBy">
-        <label for="authIdentifier">Rodné číslo / IČ:</label>
-        <input type="text" id="authIdentifier" name="authIdentifier">
-        <label for="authAddress">Trvale bytem (nebo sídlo):</label>
-        <input type="text" id="authAddress" name="authAddress">
-        <h2>Popis</h2>
-        <label for="action">Pro (určení konkrétního právního úkonu/ nebo úkonů):</label>
-        <textarea id="action"
-            name="action">provedení přepisu vozidla v registru silničních vozidel na místně příslušném obecním úřadě.</textarea>
-        <label for="vehicleBrand">Vozidlo (značka, typ):</label>
-        <input type="text" id="vehicleBrand" name="vehicleBrand">
-        <label for="licensePlate">Registrační značka (RZ):</label>
-        <input type="text" id="licensePlate" name="licensePlate">
-        <label for="vin">VIN (číslo karoserie):</label>
-        <input type="text" id="vin" name="vin">
-        <label for="acceptanceDate">Datum:</label>
-        <input type="date" id="acceptanceDate" name="acceptanceDate">
-        <label for="vin">Místo:</label>
-        <input type="text" id="place" name="place">
-    </form>
-    <button type="submit" onclick="createPDF()">Vytvořit</button>
+    <header>
+        <h1>Web App with PDF Generator</h1>
+
+        <nav class="menu">
+            <a href="../index.html">Vzory</a>
+            <a href="#">O sl</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <div class="kupni-div">
+            <h2 id="neco">Text</h2>
+            <input type="text" id="something">
+            <button onclick="doSomething();changeIt();">Test</button>
+            <button onclick="createPDF2();">Create</button>
+            <form id="TEST">
+                <h2>Plná moc</h2>
+                <h3>Zmocnitel</h3>
+                <label for="signedBy">Jméno a příjmení / název společnosti:</label>
+                <input type="text" id="signedBy" name="signedBy">
+                <label for="identifier">Rodné číslo / IČ:</label>
+                <input type="text" id="identifier" name="identifier">
+                <label for="address">Trvale bytem (nebo sídlo):</label>
+                <input type="text" id="address" name="address">
+                <h3>Zmocněnec</h3>
+                <label for="authorizedBy">Jméno a příjmení / název společnosti:</label>
+                <input type="text" id="authorizedBy" name="authorizedBy">
+                <label for="authIdentifier">Rodné číslo / IČ:</label>
+                <input type="text" id="authIdentifier" name="authIdentifier">
+                <label for="authAddress">Trvale bytem (nebo sídlo):</label>
+                <input type="text" id="authAddress" name="authAddress">
+                <h3>Popis</h3>
+                <label for="action">Pro (určení konkrétního právního úkonu/ nebo úkonů):</label>
+                <textarea id="action"
+                    name="action">provedení přepisu vozidla v registru silničních vozidel na místně příslušném obecním úřadě.</textarea>
+                <label for="vehicleBrand">Vozidlo (značka, typ):</label>
+                <input type="text" id="vehicleBrand" name="vehicleBrand">
+                <label for="licensePlate">Registrační značka (RZ):</label>
+                <input type="text" id="licensePlate" name="licensePlate">
+                <label for="vin">VIN (číslo karoserie):</label>
+                <input type="text" id="vin" name="vin">
+                <label for="acceptanceDate">Datum:</label>
+                <input type="date" id="acceptanceDate" name="acceptanceDate">
+                <label for="vin">Místo:</label>
+                <input type="text" id="place" name="place">
+            </form>
+            <button type="submit" onclick="createPDF()">Vytvořit</button>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Lukáš Strnad
+        </p>
+    </footer>
 </body>
+
+
 
 </html>
